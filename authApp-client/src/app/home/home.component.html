@@ -1,0 +1,13 @@
+<h2 *ngIf="userDetails">hello, {{userDetails.userName}}</h2>
+
+<div>
+    <a *ngIf="userDetails && checkIfUserHasAdminRole()" routerLink="/adminpanel">Admin Panel</a>
+</div>
+
+<br>
+
+<button (click)="onLogout()">Log out</button>
+
+<br>
+
+<button (click)="test()">test</button>
